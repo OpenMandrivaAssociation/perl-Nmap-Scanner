@@ -26,10 +26,6 @@ modules, a developer, network administrator, or other techie can create
 perl routines or classes which can be used to automate and integrate nmap
 scans elegantly into new and existing perl scripts.
 
-If you don't have nmap installed, you will need to download it BEFORE you
-can use these modules. Get it from http://www.insecure.org/nmap/. You will
-need nmap 3.10+ installed to use all the features of this module.
-
 %prep
 %setup -q -n %{upstream_name}-%{upstream_version}
 
