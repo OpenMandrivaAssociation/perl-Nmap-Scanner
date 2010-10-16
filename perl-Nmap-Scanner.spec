@@ -1,6 +1,8 @@
 %define upstream_name    Nmap-Scanner
 %define upstream_version 1.0
 
+%define require_exception
+
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
 Release:    %mkrel 2
@@ -16,6 +18,29 @@ BuildRequires: perl(File::Temp)
 BuildRequires: perl(IPC::Open3)
 BuildRequires: perl(LWP::UserAgent)
 BuildRequires: perl(XML::SAX)
+Provides: perl(Nmap::Scanner::Address)  
+Provides: perl(Nmap::Scanner::Distance)  
+Provides: perl(Nmap::Scanner::ExtraPorts)  
+Provides: perl(Nmap::Scanner::Host)  
+Provides: perl(Nmap::Scanner::Hostname)  
+Provides: perl(Nmap::Scanner::Hosts)  
+Provides: perl(Nmap::Scanner::NmapRun)  
+Provides: perl(Nmap::Scanner::OS)  
+Provides: perl(Nmap::Scanner::OS::Class)  
+Provides: perl(Nmap::Scanner::OS::Fingerprint)  
+Provides: perl(Nmap::Scanner::OS::IPIdSequence)  
+Provides: perl(Nmap::Scanner::OS::Match)  
+Provides: perl(Nmap::Scanner::OS::PortUsed)  
+Provides: perl(Nmap::Scanner::OS::TCPSequence)  
+Provides: perl(Nmap::Scanner::OS::TCPTSSequence)  
+Provides: perl(Nmap::Scanner::OS::Uptime)  
+Provides: perl(Nmap::Scanner::Port)  
+Provides: perl(Nmap::Scanner::RunStats)  
+Provides: perl(Nmap::Scanner::RunStats::Finished)  
+Provides: perl(Nmap::Scanner::ScanInfo)  
+Provides: perl(Nmap::Scanner::Service)  
+Provides: perl(Nmap::Scanner::Task)  
+Provides: perl(Nmap::Scanner::TaskProgress)  
 Requires: nmap
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
