@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    Perform and manipulate nmap scans using perl
 License:    GPL+ or Artistic
@@ -16,6 +16,7 @@ BuildRequires: perl(File::Temp)
 BuildRequires: perl(IPC::Open3)
 BuildRequires: perl(LWP::UserAgent)
 BuildRequires: perl(XML::SAX)
+Requires: nmap
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
