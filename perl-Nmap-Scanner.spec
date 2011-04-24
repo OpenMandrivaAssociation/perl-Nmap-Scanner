@@ -1,8 +1,6 @@
 %define upstream_name    Nmap-Scanner
 %define upstream_version 1.0
 
-%define require_exception
-
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
 Release:    %mkrel 4
@@ -16,6 +14,7 @@ Source0:    http://www.cpan.org/modules/by-module/Nmap/%{upstream_name}-%{upstre
 BuildRequires: perl(Class::Generate)
 BuildRequires: perl(File::Temp)
 BuildRequires: perl(IPC::Open3)
+BuildRequires: perl(HTML::Entities)
 BuildRequires: perl(LWP::UserAgent)
 BuildRequires: perl(XML::SAX)
 Provides: perl(Nmap::Scanner::Address)  
