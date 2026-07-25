@@ -2,14 +2,14 @@
 %define upstream_version 1.0
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	7
+Version:	%{upstream_version}
+Release:	8
 
 Summary:	Perform and manipulate nmap scans using perl
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Nmap/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/Nmap-Scanner
+Source0:	https://cpan.metacpan.org/authors/id/M/MA/MAXSCHUBE/Nmap-Scanner-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
