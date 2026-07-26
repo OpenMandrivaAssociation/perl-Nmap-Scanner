@@ -1,15 +1,13 @@
 %define upstream_name    Nmap-Scanner
-%define upstream_version 1.0
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	8
+Version:	1.0
+Release:	9
 
 Summary:	Perform and manipulate nmap scans using perl
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Nmap-Scanner
-Source0:	https://cpan.metacpan.org/authors/id/M/MA/MAXSCHUBE/Nmap-Scanner-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/M/MA/MAXSCHUBE/Nmap-Scanner-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -53,7 +51,7 @@ perl routines or classes which can be used to automate and integrate nmap
 scans elegantly into new and existing perl scripts.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
